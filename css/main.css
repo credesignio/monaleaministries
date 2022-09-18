@@ -66,6 +66,8 @@ a {
 }
 
 #header {
+  position: relative;
+  z-index: 10;
   padding: 4rem;
 }
 #header h1 {
@@ -111,17 +113,35 @@ main > section h4 {
 }
 
 .title .center {
-  padding: 0 2rem;
+  padding: 2rem;
+  padding-bottom: 6rem;
+  position: relative;
+}
+.title .center .image {
+  background-image: url("../img/mona-transparent.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -10px;
+  right: -100px;
+  width: 600px;
+  height: 700px;
+  opacity: 0.8;
+  filter: blur(1px);
 }
 .title .center h2 {
   font-size: 2.5rem;
   margin: 0;
+  text-shadow: 2px 2px 2px var(--bg);
 }
 .title .center p {
   font-size: 2rem;
+  text-shadow: 2px 2px 2px var(--bg);
 }
 .title .center .left {
   width: 70%;
+  position: relative;
+  z-index: 2;
 }
 
 .about {
@@ -129,7 +149,7 @@ main > section h4 {
   border-bottom: 0.5rem solid #c9985c;
   background: #492c18;
   --bg: #492c18;
-  margin: 4rem 0;
+  margin-bottom: 4rem;
   padding: 4px 0;
   color: #fffbee;
 }
@@ -172,6 +192,7 @@ main > section h4 {
   background: none;
   font-family: inherit;
   max-width: 100%;
+  border-radius: 0;
 }
 .contact form input:focus, .contact form input:focus-visible, .contact form textarea:focus, .contact form textarea:focus-visible {
   outline: none;
@@ -214,6 +235,10 @@ main > section h4 {
 @media screen and (max-width: 1000px) {
   .title .center .left {
     width: 100%;
+  }
+  .title .center .image {
+    height: 600px;
+    right: -200px;
   }
   #header {
     padding: 2rem;
