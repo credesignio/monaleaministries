@@ -5,6 +5,7 @@ body,
 html {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -19,6 +20,7 @@ body {
   --bg: #fff8e0;
   background: var(--bg);
   line-height: 1.5;
+  position: relative;
 }
 
 h1,
@@ -28,6 +30,10 @@ h4 {
   margin: 0;
 }
 
+img{
+    max-width: 100%;
+}
+
 button,
 body {
   font-family: "Playfair Display", sans-serif;
@@ -35,6 +41,10 @@ body {
 
 a{
     color: inherit;
+}
+
+div.clear{
+    clear: both;
 }
 
 .center {
@@ -66,6 +76,12 @@ a{
     &:hover{
         cursor: pointer;
         filter: saturate(70%);
+    }
+    &.b2{
+        background: transparent;
+        color: $theme;
+        border: .2rem solid $theme;
+        font-size: 1.3rem;
     }
 }
 
@@ -156,19 +172,45 @@ main > section {
 
 .about {
   border-top: 0.5rem solid $theme;
-  border-bottom: 0.5rem solid $theme;
+//   border-bottom: 0.5rem solid $theme;
   background: #492c18;
   --bg: #492c18;
   margin-bottom: 4rem;
-  padding: 4px 0;
+  padding: 2rem 0;
   color: $white;
   .center {
+
+    img{
+        float: left;
+        height: 400px;
+        margin-right: 4rem;
+        box-shadow: .5rem .5rem $theme;
+    }
     padding: 2rem;
 
     p {
       font-size: 1.5rem;
     }
   }
+}
+
+.video{
+    margin: 6rem 0;
+    .center{
+        padding: 0 1rem;
+        text-align: center;
+        iframe{
+            box-shadow: -1rem -1rem $theme;
+            border: none;
+            background: black;
+            width: 640px;
+            max-width: 100%;
+            height: 360px;
+            &:focus-visible, &:focus{
+                outline: none;
+            }
+        }
+    }
 }
 
 .topics {
@@ -194,6 +236,15 @@ main > section {
 }
 
 .contact {
+  img{
+    width: 400px;
+    float: right;
+    box-shadow: 1rem -1rem $theme;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    transform: scaleX(-1);
+  }
   background: $white;
   .center {
     padding: 8rem 2rem;
@@ -269,6 +320,10 @@ main > section {
     }
     .topics .topics-container section{
         width: 100%;
+    }
+    body section .center .img-float{
+        float: none;
+        // display: none;
     }
 }
 
