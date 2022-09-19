@@ -89,9 +89,9 @@
                 <p>Phone: <a href="tel:2083053270">(208) 305-3270</a><br>
                 Email: <a href="mailto:mona@crosspointlew.org">mona@crosspointlew.org</a></p>
                 <form id="contactForm" action="https://formspree.io/f/xyyvelzq" method="post" target="nullFrame">
-                    <label class="form-label" for="form-name">Name</label><input type="text" id="form-name" name="name">
-                    <label class="form-label" for="form-email">Email</label><input id="form-email" type="email" name="email" required="true">
-                    <label class="form-label" for="form-message">Message</label><textarea id="form-message" name="message" label="Message" required="true" cols="40" rows="4"></textarea>
+                    <label class="form-label" for="form-name">Name</label><input autocomplete="off" type="text" id="form-name" name="name">
+                    <label class="form-label" for="form-email">Email</label><input autocomplete="off" id="form-email" type="email" name="email" required="true">
+                    <label class="form-label" for="form-message">Message</label><textarea autocomplete="off" id="form-message" name="message" label="Message" required="true" cols="40" rows="4"></textarea>
                     <button type="submit" class="button">Send</button>
                 </form>
                 <iframe id="nullFrame" name="nullFrame" style="display:none"></iframe>
@@ -103,5 +103,19 @@
             <p class="credit">Site by <a href="https://credesign.io">CreDesign</a></p>
         </div>
     </footer>
+
+    <script>
+        let form = document.querySelector("form");
+        let button = document.querySelector("form button");
+        form.addEventListener("submit", () => {
+            button.disabled = true;
+            setTimeout(() => {
+                let message = document.createElement("div");
+                message.textContent = "Sent! We will get in touch soon.";
+                message.classList.add("message");
+                form.appendChild(message);
+            }, 700)
+        })
+    </script>
 </body>
 </html>

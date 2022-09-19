@@ -83,6 +83,14 @@ div.clear{
         border: .2rem solid $theme;
         font-size: 1.3rem;
     }
+    &:disabled{
+        opacity: 0.4;
+    }
+}
+
+.message{
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 #header {
