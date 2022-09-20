@@ -1,1 +1,70 @@
-About me
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>About - Mona Lea Ministries</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=WindSong:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=WindSong&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <meta property="og:title" content="Mona Lea Ministries" />
+    <meta name="description" content="Joyfully living out the great commission and encouraging others to join me.">
+    <meta property="og:description"
+        content="Joyfully living out the great commission and encouraging others to join me." />
+    <meta name="theme-color" content="#c9985c">
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="/">Mona Lea Ministries</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="center">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis rem dolorem reprehenderit totam dolore quas eaque commodi fuga. Perspiciatis aspernatur sunt nesciunt consectetur vel at consequuntur facilis voluptatum quam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis rem dolorem reprehenderit totam dolore quas eaque commodi fuga. Perspiciatis aspernatur sunt nesciunt consectetur vel at consequuntur facilis voluptatum quam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis rem dolorem reprehenderit totam dolore quas eaque commodi fuga. Perspiciatis aspernatur sunt nesciunt consectetur vel at consequuntur facilis voluptatum quam!</p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="center">
+            <p>Copyright &copy; 2022 Mona Lea Ministries</p>
+            <p class="credit">Site by <a href="https://credesign.io">CreDesign</a></p>
+        </div>
+    </footer>
+
+    <script>
+        let form = document.querySelector("form");
+        let button = document.querySelector("form button");
+        form.addEventListener("submit", () => {
+            button.disabled = true;
+            setTimeout(() => {
+                let message = document.createElement("div");
+                message.textContent = "Sent! We will get in touch soon.";
+                message.classList.add("message");
+                form.appendChild(message);
+            }, 700)
+        })
+    </script>
+</body>
+
+</html>
