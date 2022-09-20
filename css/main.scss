@@ -1,5 +1,6 @@
-$theme: #c9985c;
+$theme: #c5a72f;
 $white: #fffbee;
+$dark: #433c38;
 
 body,
 html {
@@ -153,12 +154,12 @@ main > section {
           background-repeat: no-repeat;
           background-size: contain;
           position: absolute;
-          bottom: -10px;
+          bottom: 0px;
           right: -250px;
           width: 600px;
           height: 700px;
-          opacity: 0.8;
-          filter: blur(1px);
+          opacity: 1;
+          filter: brightness(105%);
       }
     h2 {
       font-size: 2.5rem;
@@ -180,8 +181,8 @@ main > section {
 .about {
   border-top: 0.5rem solid $theme;
 //   border-bottom: 0.5rem solid $theme;
-  background: #492c18;
-  --bg: #492c18;
+  background: $dark;
+  --bg: #{$dark};
   margin-bottom: 4rem;
   padding: 2rem 0;
   color: $white;

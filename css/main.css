@@ -60,7 +60,7 @@ div.clear {
   color: #fffbee;
   padding: 0.75em 1.5em;
   border: none;
-  background-color: #c9985c;
+  background-color: #c5a72f;
   font-weight: bold;
   transition: filter 0.1s ease;
   display: inline-block;
@@ -68,7 +68,7 @@ div.clear {
 }
 .button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px var(--bg), 0 0 0 8px #c9985c;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 8px #c5a72f;
 }
 .button:hover {
   cursor: pointer;
@@ -76,8 +76,8 @@ div.clear {
 }
 .button.b2 {
   background: transparent;
-  color: #c9985c;
-  border: 0.2rem solid #c9985c;
+  color: #c5a72f;
+  border: 0.2rem solid #c5a72f;
   font-size: 1.3rem;
 }
 .button:disabled {
@@ -146,12 +146,12 @@ main > section h4 {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   right: -250px;
   width: 600px;
   height: 700px;
-  opacity: 0.8;
-  filter: blur(1px);
+  opacity: 1;
+  filter: brightness(105%);
 }
 .title .center h2 {
   font-size: 2.5rem;
@@ -169,9 +169,9 @@ main > section h4 {
 }
 
 .about {
-  border-top: 0.5rem solid #c9985c;
-  background: #492c18;
-  --bg: #492c18;
+  border-top: 0.5rem solid #c5a72f;
+  background: #433c38;
+  --bg: #433c38;
   margin-bottom: 4rem;
   padding: 2rem 0;
   color: #fffbee;
@@ -183,7 +183,7 @@ main > section h4 {
   float: left;
   height: 400px;
   margin-right: 4rem;
-  box-shadow: 0.5rem 0.5rem #c9985c;
+  box-shadow: 0.5rem 0.5rem #c5a72f;
 }
 .about .center p {
   font-size: 1.5rem;
@@ -197,7 +197,7 @@ main > section h4 {
   text-align: center;
 }
 .video .center iframe {
-  box-shadow: -1rem -1rem #c9985c;
+  box-shadow: -1rem -1rem #c5a72f;
   border: none;
   background: black;
   width: 640px;
@@ -232,7 +232,7 @@ main > section h4 {
 .contact img {
   width: 400px;
   float: right;
-  box-shadow: 1rem -1rem #c9985c;
+  box-shadow: 1rem -1rem #c5a72f;
   margin-top: 1rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
@@ -244,7 +244,7 @@ main > section h4 {
 .contact form input, .contact form textarea {
   display: block;
   font-size: inherit;
-  border: 2px solid #c9985c;
+  border: 2px solid #c5a72f;
   padding: 0.5rem 1rem;
   background: none;
   font-family: inherit;
@@ -253,7 +253,7 @@ main > section h4 {
 }
 .contact form input:focus, .contact form input:focus-visible, .contact form textarea:focus, .contact form textarea:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px #fffbee, 0 0 0 8px #c9985c;
+  box-shadow: 0 0 0 4px #fffbee, 0 0 0 8px #c5a72f;
 }
 .contact form button {
   display: block;
