@@ -60,7 +60,7 @@ div.clear {
   color: #fffbee;
   padding: 0.75em 1.5em;
   border: none;
-  background-color: #c5a72f;
+  background-color: #c7ab3c;
   font-weight: bold;
   transition: filter 0.1s ease;
   display: inline-block;
@@ -68,7 +68,7 @@ div.clear {
 }
 .button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px var(--bg), 0 0 0 8px #c5a72f;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 8px #c7ab3c;
 }
 .button:hover {
   cursor: pointer;
@@ -76,8 +76,8 @@ div.clear {
 }
 .button.b2 {
   background: transparent;
-  color: #c5a72f;
-  border: 0.2rem solid #c5a72f;
+  color: #c7ab3c;
+  border: 0.2rem solid #c7ab3c;
   font-size: 1.3rem;
 }
 .button:disabled {
@@ -169,9 +169,9 @@ main > section h4 {
 }
 
 .about {
-  border-top: 0.5rem solid #c5a72f;
-  background: #433c38;
-  --bg: #433c38;
+  border-top: 0.5rem solid #c7ab3c;
+  background: #433b36;
+  --bg: #433b36;
   margin-bottom: 4rem;
   padding: 2rem 0;
   color: #fffbee;
@@ -183,7 +183,7 @@ main > section h4 {
   float: left;
   height: 400px;
   margin-right: 4rem;
-  box-shadow: 0.5rem 0.5rem #c5a72f;
+  box-shadow: 0.5rem 0.5rem #c7ab3c;
 }
 .about .center p {
   font-size: 1.5rem;
@@ -197,7 +197,7 @@ main > section h4 {
   text-align: center;
 }
 .video .center iframe {
-  box-shadow: -1rem -1rem #c5a72f;
+  box-shadow: -1rem -1rem #c7ab3c;
   border: none;
   background: black;
   width: 640px;
@@ -232,7 +232,7 @@ main > section h4 {
 .contact img {
   width: 400px;
   float: right;
-  box-shadow: 1rem -1rem #c5a72f;
+  box-shadow: 1rem -1rem #c7ab3c;
   margin-top: 1rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
@@ -244,7 +244,7 @@ main > section h4 {
 .contact form input, .contact form textarea {
   display: block;
   font-size: inherit;
-  border: 2px solid #c5a72f;
+  border: 2px solid #c7ab3c;
   padding: 0.5rem 1rem;
   background: none;
   font-family: inherit;
@@ -253,7 +253,7 @@ main > section h4 {
 }
 .contact form input:focus, .contact form input:focus-visible, .contact form textarea:focus, .contact form textarea:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px #fffbee, 0 0 0 8px #c5a72f;
+  box-shadow: 0 0 0 4px #fffbee, 0 0 0 8px #c7ab3c;
 }
 .contact form button {
   display: block;
