@@ -162,9 +162,9 @@ main > section {
           background-size: cover;
           position: absolute;
           bottom: 2rem;
-          right: -300px;
-          width: 600px;
-          height: 700px;
+          right: -250px;
+          width: 550px;
+          height: 600px;
           opacity: 1;
           filter: brightness(105%);
           box-shadow: 1rem -1rem $theme;
@@ -332,15 +332,25 @@ main > section {
   }
 }
 
-
+@media screen and (max-width: 1350px) {
+  .title .center .image {
+    height: 550px;
+    width: 350px;
+    right: -50px;
+    bottom: 5rem;
+  }
+}
 
 @media screen and (max-width: 1000px) {
+    .about img{
+      height: auto !important;
+      width: 400px;
+    }
     .title .center .left{
         width: 100%;
     }
     .title .center .image{
-        height: 600px;
-        right: -200px;
+        display: none;
     }
     #header {
         padding: 2rem;
