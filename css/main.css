@@ -149,25 +149,27 @@ main > section h4 {
   position: relative;
 }
 .title .center .image {
-  background-image: url("../img/mona-transparent.png");
+  background-image: url("../img/mona-transparent.jpeg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: absolute;
-  bottom: 0px;
-  right: -250px;
+  bottom: 2rem;
+  right: -300px;
   width: 600px;
   height: 700px;
   opacity: 1;
   filter: brightness(105%);
+  box-shadow: 1rem -1rem #c7a73c;
 }
 .title .center h2 {
   font-size: 2.5rem;
   margin: 0;
-  text-shadow: 2px 2px 2px var(--bg);
+}
+.title .center h2, .title .center p {
+  text-shadow: 2px 2px 2px var(--bg), -2px -2px 2px var(--bg), -2px 2px 2px var(--bg), 2px -2px 2px var(--bg);
 }
 .title .center p {
   font-size: 2rem;
-  text-shadow: 2px 2px 2px var(--bg);
 }
 .title .center .left {
   width: 70%;
