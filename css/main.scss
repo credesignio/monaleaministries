@@ -1,6 +1,6 @@
 $theme: #c7ab3c;
 $white: #fffbee;
-$dark: #433b36;
+$dark: #454241;
 
 body,
 html {
@@ -42,6 +42,10 @@ body {
 
 a{
     color: inherit;
+    &:focus-visible{
+        outline: none;
+        text-decoration: none;
+    }
 }
 
 div.clear{
@@ -234,10 +238,16 @@ main > section {
   }
   .topics-container {
     section {
-      width: 49%;
+      width: 50%;
       display: inline-block;
-      padding: 1rem;
       vertical-align: top;
+      padding-bottom: 1rem;
+    }
+    section:nth-of-type(odd){
+        padding-right: 1rem;
+    }
+    section:nth-of-type(even){
+        padding-left: 1rem;
     }
     q {
       font-size: 0.8em;
@@ -338,6 +348,7 @@ main > section {
     }
     .topics .topics-container section{
         width: 100%;
+        padding: 0 !important;
     }
     body section .center .img-float{
         float: none;

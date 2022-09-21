@@ -39,6 +39,10 @@ body {
 a {
   color: inherit;
 }
+a:focus-visible {
+  outline: none;
+  text-decoration: none;
+}
 
 div.clear {
   clear: both;
@@ -173,8 +177,8 @@ main > section h4 {
 
 .about {
   border-top: 0.5rem solid #c7ab3c;
-  background: #433b36;
-  --bg: #433b36;
+  background: #454241;
+  --bg: #454241;
   margin-bottom: 4rem;
   padding: 2rem 0;
   color: #fffbee;
@@ -219,10 +223,16 @@ main > section h4 {
   margin-bottom: 2rem;
 }
 .topics .topics-container section {
-  width: 49%;
+  width: 50%;
   display: inline-block;
-  padding: 1rem;
   vertical-align: top;
+  padding-bottom: 1rem;
+}
+.topics .topics-container section:nth-of-type(odd) {
+  padding-right: 1rem;
+}
+.topics .topics-container section:nth-of-type(even) {
+  padding-left: 1rem;
 }
 .topics .topics-container q {
   font-size: 0.8em;
@@ -313,6 +323,7 @@ main > section h4 {
   }
   .topics .topics-container section {
     width: 100%;
+    padding: 0 !important;
   }
   body section .center .img-float {
     float: none;
