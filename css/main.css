@@ -98,7 +98,8 @@ div.clear {
   z-index: 10;
   padding: 4rem;
 }
-#header h1 {
+#header .title {
+  font-weight: bold;
   font-size: 3.5rem;
   margin: 0;
   font-family: "WindSong", cursive;
@@ -106,7 +107,7 @@ div.clear {
   vertical-align: middle;
   margin-right: 4rem;
 }
-#header h1 a {
+#header .title a {
   text-decoration: none;
 }
 #header nav {
@@ -282,8 +283,9 @@ main > section h4 {
 }
 
 .content .center {
-  padding: 5rem 2rem;
-  margin: 2rem auto;
+  padding: 0 2rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
 #footer {
@@ -309,6 +311,28 @@ main > section h4 {
   color: black;
 }
 
+.page-about h2 {
+  margin-top: 4rem;
+}
+.page-about h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-family img {
+  float: left;
+  width: 40%;
+  margin-right: 2rem;
+  box-shadow: -1rem -1rem #c7a73c;
+}
+
+.about-children img {
+  float: right;
+  width: 40%;
+  margin-left: 2rem;
+  box-shadow: 1rem -1rem #c7a73c;
+}
+
 @media screen and (max-width: 1350px) {
   .title .center .image {
     height: 550px;
@@ -318,6 +342,12 @@ main > section h4 {
   }
 }
 @media screen and (max-width: 1000px) {
+  .about-family img, .about-children img {
+    float: none;
+    width: 400px;
+    margin: none;
+    margin-top: 2rem;
+  }
   .about img {
     height: auto !important;
     width: 400px;
