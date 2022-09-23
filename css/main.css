@@ -53,11 +53,6 @@ div.clear {
   max-width: 1300px;
 }
 
-.center-in {
-  margin: 0 auto;
-  max-width: 1010px;
-}
-
 .button {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -155,7 +150,7 @@ main > section h4 {
   background-size: cover;
   position: absolute;
   bottom: 2rem;
-  right: -250px;
+  right: -100px;
   width: 550px;
   height: 600px;
   opacity: 1;
@@ -173,7 +168,7 @@ main > section h4 {
   font-size: 2rem;
 }
 .title .center .left {
-  width: 70%;
+  width: 60%;
   position: relative;
   z-index: 2;
 }
@@ -337,7 +332,7 @@ main > section h4 {
   .title .center .image {
     height: 550px;
     width: 350px;
-    right: -50px;
+    right: 0px;
     bottom: 5rem;
   }
 }
