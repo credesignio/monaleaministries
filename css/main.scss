@@ -156,10 +156,11 @@ main > section {
           background-image: url("../img/mona-transparent.jpeg");
           background-repeat: no-repeat;
           background-size: cover;
+          background-position-x: center;
           position: absolute;
           bottom: 2rem;
-          right: -100px;
-          width: 550px;
+          right: 0px;
+          width: 450px;
           height: 600px;
           opacity: 1;
           filter: brightness(105%);
@@ -356,7 +357,7 @@ main > section {
   .title .center .image {
     height: 550px;
     width: 350px;
-    right: 0px;
+    right: 3rem;
     bottom: 5rem;
   }
 }
